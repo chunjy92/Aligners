@@ -1,0 +1,15 @@
+# generated files
+/target
+/tools
+/out
+/project/target
+/project/boot
+/project/project
+/experiments
+/models
+# LDC data
+/data
+# IntelliJ cruft
+.idea
+*.iml
+.history
