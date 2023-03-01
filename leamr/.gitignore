@@ -1,0 +1,7 @@
+/data/*
+/.idea/*
+*.pyc
+/data-release/amrs/*
+neuralcoref/
+leamr_stanza_resources/
+outputs/
