@@ -1,0 +1,6 @@
+# i_0 turned_1 on_2 my_3 coputer_4 this_5 morning_6 and_7 instead_8 of_9 opening_10 the_11 internet_12 to_13 my_14 google_15 home_16 page_17 (_18 white_19 )_20 it_21 opened_22 to_23 a_24 page_25 called_26 "_27 blackle_28 "_29 which_30 was_31 black_32 ._33
+(a / and~e.7 :op1 (t / turn-on-13~e.1 :arg0 (i2 / i~e.0) :arg1 (c / computer~e.5) :time~e.26 (d / date-entity :dayperiod~e.3 (m / morning~e.6) :mod (t2 / today~e.24))) :op2 (o / open-01~e.22 :arg1 i :location~e.23 (p / page :name (n / name :op1 "blackle"~e.28) :arg1-of~e.4 (b / black-04~e.32)) :arg1-of~e.4 (i3 / instead-of-91~e.8 :arg2 (o2 / open-01~e.10 :arg1 (i / internet~e.12) :location~e.13 (p2 / page~e.17 :mod (h / home~e.16) :arg1-of~e.4 (w / white-03~e.19) :mod (c2 / company :name (n2 / name :op1 "google"~e.15)))))))
+
+# he_0 estimated_1 it_2 would_3 be_4 negative_5 0.5_6 percent_7 ,_8 plus_9 or_10 minus_11 ._12
+(e / estimate-01~e.1 :arg0 (h / he~e.0) :arg1 (i / it~e.2) :arg2 (a / approximately~e.5 :op1 (p / percentage-entity~e.7 :value "-0.5"~e.6)))
+

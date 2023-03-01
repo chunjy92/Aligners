@@ -1,0 +1,5 @@
+AMR=/mnt/B-MRP/camr/samples/lpp.txt.corenlp.anno.amrs
+ENG=/mnt/B-MRP/camr/samples/lpp.txt.corenlp.anno.sents
+MGIZA_SCRIPT=mgiza/mgizapp/scripts
+MGIZA_BIN=mgiza/mgizapp/bin
+
