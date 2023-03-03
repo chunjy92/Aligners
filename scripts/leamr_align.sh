@@ -15,12 +15,6 @@ cd $LEAMR_HOME
 
 export STANZA_RESOURCES_DIR=$LEAMR_HOME/leamr_stanza_resources
 
-
-if [[ "$VIRTUAL_ENV" != "" ]]
-then
-  source deactivate
-fi
-
 #. $LEAMR_HOME/
 . /home/jchun/.pyenv/versions/3.8.12/envs/leamr/bin/activate
 python3 -V
