@@ -26,22 +26,24 @@ Nov 20, 2022
 
 ### B. ISI
 * requires python2
-  *  `pip2 install virtualenv` then `python2 -m virtualenv python2-env`
-  * `python2-env` virtualenv within ISI dir by default; or set up new one separately
+  *  ~~`pip2 install virtualenv` then `python2 -m virtualenv python2-env`~~
+  * ~~`python2-env` virtualenv within ISI dir by default; or set up new one separately~~
+  * UPDATE: `pyenv virtualenv 2.7.17 isi`
 * `mgizapp` requires Boost c++ libraries
   * `sudo apt-get install libboost-all-dev`
 * read instructions in `INSTALL` inside `mgizapp`
 * running `scripts/jamr2isi.py` on JAMR output prepares input data in required format
 
 ### C. LEAMR
-* requires python3 (3.7.3 or 3.7.6 on ubuntu 22.04) -> UPDATE: 3.7.17 seems fine, or rather required, with spacy==2.3.7
-  * pyenv virtualenv by default; or set up new one separately
+* ~~requires python3 (3.7.3 or 3.7.6 on ubuntu 22.04)~~
+  * UPDATE: 3.7.17 seems required, along with spacy==2.3.7
+* pyenv virtualenv by default; or set up local venv separately and configure the script acordingly
+* torch `1.13.1+cu117`
 * relies on Stanza and spaCy whose version may be different from what model uses
   * set up Stanza with `STANZA_RESOURCES_DIR=./leamr/leamr_stanza_resources python -c "import stanza; stanza.download('en')"`
 * also need to set up `neuralmonkey` separately
   * `pip install cython==0.29 --upgrade`
 * don't forget `python -m spacy download en`
-* for torch, `1.13.1+cu117` seems fine
 * contains minor modifications
   * doesn't drop `.txt` in the outputs filename
   * uses pre-tokenized outputs
@@ -54,23 +56,9 @@ pyenv global 2.7.15
 ```
 * since Python3 are usually pre-installed, this exposes python2 and python3.
 
-In order to run all 3 aligners in sequence (JAMR -> ISI -> LEAMR)
+To run aligners in sequence (JAMR -> ISI -> LEAMR)
 ```shell
 
 ./scripts/run_aligners.sh [input_file]
 
-```
-
-Or, to run only a single aligner:
-### A. JAMR
-```shell
-./scripts/jamr_align.sh [input_file]
-```
-### B. ISI
-```shell
-./scripts/isi_align.sh [input_file]
-```
-### C. LEAMR
-```shell
-./scripts/leamr_align.sh [input_file]
 ```

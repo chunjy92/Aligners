@@ -15,8 +15,10 @@ cd $LEAMR_HOME
 
 export STANZA_RESOURCES_DIR=$LEAMR_HOME/leamr_stanza_resources
 
-#. $LEAMR_HOME/
-. $HOME/.pyenv/versions/3.7.17/envs/leamr/bin/activate
+venv=leamr
+echo -e "\nPyenv VENV: $venv"
+#. $HOME/.pyenv/versions/3.7.17/envs/leamr/bin/activate
+. $PYENV_ROOT/versions/$venv/bin/activate
 python3 -V
 
 python nlp_data.py $INPUT
