@@ -1,3 +1,11 @@
+## UPDATE for UMR Parsing Pipeline
+do not clone `amr-utils` but simply use as is given in this repo
+```
+pip install -r requirements.txt
+pip install ./amr-utils
+```
+* this avoids an error from [this line](https://github.com/ablodge/amr-utils/blob/master/amr_utils/amr_readers.py#L277) for some AMR parses
+
 # LEAMR 
 
 **LEAMR** (**L**inguistically **E**nriched **AMR**, pronounced _lemur_) Alignments is a data release of alignments between AMR and English text for better parsing and probing of many different linguistic phenomena. We also include our code for the LEAMR aligner. For more details, read our paper.

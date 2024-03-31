@@ -12,10 +12,10 @@ BASEDIR=$(dirname $0)
 echo "Base Dir: $BASEDIR"
 cd $BASEDIR
 
-if [[ "$VIRTUAL_ENV" != "" ]]
-then
-  source deactivate
-fi
+#if [[ "$VIRTUAL_ENV" != "" ]]
+#then
+#  source deactivate
+#fi
 
 python3 -V
 

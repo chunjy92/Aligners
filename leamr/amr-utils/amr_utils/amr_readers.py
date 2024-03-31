@@ -274,7 +274,10 @@ class AMR_Reader:
                 for s, r, t in amr.edges.copy():
                     if r == ':wiki':
                         amr.edges.remove((s, r, t))
-                        del amr.nodes[t]
+                        try:
+                            del amr.nodes[t]
+                        except KeyError:
+                            pass
                         wiki_nodes.append(t)
                         wiki_edges.append((s,r,t))
                 if alignments and amr.id in alignments:
